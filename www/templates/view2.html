@@ -1,0 +1,19 @@
+<ion-view view-title="Message">
+  <ion-content class="padding">
+    <div class="list">
+
+    <div class="item item-input-inset">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Message" ng-model="user.message">
+      </label>
+      <button class="button button-small" ng-click="send()">
+        Send
+      </button>
+    </div>
+    <br>
+    <div ng-repeat = "d in data">
+      <b>{{d.username}}:</b> {{d.message}}
+    </div>
+  </div>
+  </ion-content>
+</ion-view>
